@@ -18,10 +18,11 @@ import io.jsonwebtoken.security.Keys;
 
 @Service
 public class JwtService {
-    private final long TOKEN_VALIDITY = 3000000000000000000L;
+    // valid for 24 hrs
+    private final int TOKEN_VALIDITY = 1000 * 60 * 60 * 24;
 
-    @Value("${env.password}: default")
-    private static final String SECRET_KEY = "";
+    @Value("${env.password}")
+    private String SECRET_KEY;
 
     // try to understand how Claims::getSubject is working
     public String extractUsername(String token) {
