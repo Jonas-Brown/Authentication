@@ -21,7 +21,7 @@ public class JwtService {
     // valid for 24 hrs
     private final int TOKEN_VALIDITY = 1000 * 60 * 60 * 24;
 
-    @Value("${env.password}")
+    @Value("${secret}")
     private String SECRET_KEY;
 
     // try to understand how Claims::getSubject is working

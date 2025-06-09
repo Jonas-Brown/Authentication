@@ -32,4 +32,3 @@ build/
 ### VS Code ###
 .vscode/*
 .env
-security/src/main/resources/application.yaml
