@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        "[format_sql]": true
+env:
+  password: 67930f7d09064bde6509c8264cfde49b8889552a191f5e317a630ac22e8dd999fed9f5623b01cf94c50592320a67fb171d4f6e7157077cf0f93a5c4c191388ed9b2b3b27124cef9a9d048909a02316f9f4b512ccbfd83243a75f00766fdca496944535733561c3799c06e46a68867b4460a4bfcb55f3eaf9392e26048a92416d592c3285c06b5d294cf64c6777cd960ee567e76470ed27e5e6df80249ef130b5e467bf3ab334937c18dc556b9fb87524c5678b0f76d9da4101d7b2b4d76f48e20f9421020edf63aef8b21b29f679ccedeb33cd6043885b1d984d57ec49a51a191eb8bc9c96d6ba9f6343391fc0dd5d63db0b685b1f2d4425c163468c44baa159
